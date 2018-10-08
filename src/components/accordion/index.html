@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../index.scss">
+  <title>Sample component</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <h1>Sample components</h1>
+
+    <section>
+      <h2>Accordion list</h2>
+      <div class="content">
+
+        <ul class="accordion">
+          <li class="accordion__item">
+            <button aria-controls="accordion-details-01" aria-expanded="true" class="accordion__action">
+              <div class="accordion__title">Accordion Title 1</div>
+            </button>
+            <div class="accordion__content" id="accordion-details-01">
+              <p>Accordion Content.</p>
+            </div>
+          </li>
+          <li class="accordion__item">
+            <button aria-controls="accordion-details-02" aria-expanded="true" class="accordion__action">
+              <div class="accordion__title">Accordion Title 2</div>
+            </button>
+            <div class="accordion__content" id="accordion-details-02">
+              <p>Accordion Content.Accordion Content.Accordion Content.Accordion Content.Accordion Content.Accordion Content.Accordion Content.Accordion Content.Accordion Content.Accordion Content.</p>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <nav>
+      <h2>Tutorial</h2>
+      <ul>
+        <li><a href="./tutorial/01/index.html">01</a></li>
+        <li><a href="./tutorial/02/index.html">02</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <script src="./accordion.js"></script>
+</body>
+</html>
