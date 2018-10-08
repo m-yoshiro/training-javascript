@@ -1,0 +1,49 @@
+.accordion__item {
+  padding: 0.5rem;
+
+  + #{&} {
+    border-top: 1px solid #bbb;
+  }
+}
+
+.accordion__item:not(.accordion__item--active) {
+  overflow: hidden;
+  transition: all .25s;
+}
+
+.accordion__title {
+  font-size: 1.5rem;
+}
+
+.accordion__action {
+  outline: 0;
+  border: 0;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: left;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.accordion__content {
+  transition: all .25s;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+
+  p:first-child {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .accordion__item:not(.accordion__item--active) & {
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+
+    padding: 0;
+  }
+}
